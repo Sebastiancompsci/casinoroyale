@@ -1,0 +1,1 @@
+The primary thing we needed to add was how we actually were going to implement the tables into our site. 
