@@ -1,9 +1,9 @@
-<!-- Login page -->
+<!-- Register page -->
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login | Casino Royale</title>
+		<title>Register | Casino Royale</title>
 		<!-- Responsive meta tag -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -11,17 +11,17 @@
 		<!-- Login page body. No styling, we are leaving it bare for now. -->
 		<div class="login-page">
 			<div class="form">
-				<form class="login-form" action="login" method="post">
+				<form class="login-form" action="register" method="post">
 					<label for="username">Username</label>
-					<input type="text" name="username" placeholder="username"/>
+					<input type="text" name="username" placeholder="username" required/>
 					<label for="password">Password</label>
-					<input type="password" name="password" placeholder="password"/>
-					<button type="submit" name="login">Login</button>
-					<!-- Span for errors -->
+					<input type="password" name="password" placeholder="password" required/>
+					<button type="submit">Register</button>
+					<!-- A span for errors -->
 					<span>
 						{{error}}
 					</span>
-					<p class="message">Not registered? <a href="register">Create an account</a></p>
+					<p class="message">Already registered? <a href="login">Sign In</a></p>
 				</form>
 			</div>
 		</div>

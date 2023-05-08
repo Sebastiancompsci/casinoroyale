@@ -1,20 +1,25 @@
+<!-- Home page -->
+
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <title>
-            Welcome to the Casino Royale!
-        </title>
-    </head>
+<html>
+	<head>
+		<title>Home | Casino Royale</title>
+		<!-- Responsive meta tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<!-- Index page body. No styling, we are leaving it bare for now. -->
 
-    <div>
-        <button id = "nextPage">
-            go to next page
-        </button>
+		<!-- If logged in, say "Hello, {{user}}, else don't say anything. We use Jinja -->
+		{% if user %}
+			<p>Hello, {{user}}!</p>
+		{% endif %}
 
-        <button id="viewAnalytics">
-            show
-        </button>
-    </div>
-
-    <script src="js"></script>
+		<!-- If logged in, show logout button, else show login button -->
+		{% if user %}
+			<a href="/logout">Logout</a>
+		{% else %}
+			<a href="/login">Login</a>
+		{% endif %}
+	</body>
 </html>
