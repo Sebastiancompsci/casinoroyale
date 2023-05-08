@@ -1,0 +1,16 @@
+# Python .gitignore
+
+.pyenv/
+.vscode/
+.idea/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+
+.db
+*.sqlite3
