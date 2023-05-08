@@ -1,0 +1,2 @@
+var nextPage = document.getElementById("nextPage")
+var viewAnalytics = document.getElementById("viewAnalytics")
