@@ -6,18 +6,38 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<!-- Index page body. No styling, we are leaving it bare for now. -->
-
-		<!-- If logged in, say "Hello, {{user}}, else don't say anything. We use Jinja -->
-		{% if user %}
-			<p>Hello, {{user}}!</p>
-		{% endif %}
-
-		<!-- If logged in, show logout button, else show login button -->
 		{% if user %}
 			<a href="/logout">Logout</a>
 		{% else %}
 			<a href="/login">Login</a>
 		{% endif %}
+
+		<h1>Welcome to Casino Royale!</h1>
+
+		{% if user %}
+			<p>Hello {{ user }}!</p>
+		{% else %}
+			<p>Log in to set tracked teams and customize your experience!</p>
+		{% endif %}
+
+		<div id="tracked-teams">
+			<h2>Tracked Teams</h2>
+			{% if user %}
+				{% set length = tracked_teams|length %}
+				{% if length == 0 %}
+					<p>You are not tracking any teams. You can choose teams to track on your <a href="/profile">profile</a>.</p>
+				{% else %}
+					<!-- For each team, create a div -->
+					{% for team in tracked_teams %}
+						<div class="team">
+							<h3>{{ team.name }}</h3>
+							<p>Placeholder content</p>
+						</div>
+					{% endfor %}
+				{% endif %}
+			{% else %}
+				<p>Log in to see and set tracked teams.</p>
+			{% endif %}
+		</div>
 	</body>
 </html>
