@@ -1,0 +1,8 @@
+{
+  "name": "casino-royale",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./static/css/main.css -o ./static/css/dist.css --watch --minify"
+  }
+}
