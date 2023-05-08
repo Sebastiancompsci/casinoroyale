@@ -12,6 +12,10 @@ def index():
         cursor.execute('SELECT * FROM users WHERE username = ?', (session['user'],))
         user = cursor.fetchone()
 
+        # Is none? Redirect to login page
+        if not user:
+            return redirect('/login')
+
         # Fetch all tracked teams from database
         cursor.execute('SELECT * FROM tracked_teams WHERE user_id = ?', (user[0],))
         tracked_teams = cursor.fetchall()
