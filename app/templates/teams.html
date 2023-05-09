@@ -15,12 +15,23 @@
 
 <h1>Teams</h1>
 <div id="teamsContainer">Loading...</div>
-
+<div>
+    for()
+</div>
 </div>
 <!-- Core JS -->
-<script src="/static/js/core/notify.js"></script>
+<script src="/static/js/core/notify.js"></script> 
 <!-- API JS -->
 <script src="/static/js/api/teams.js"></script>
+<script>
+    var trackTeam = document.createElement('button')
+    trackTeam.innerText='can you click me?'
+    trackTeam.id ='mainButton'
+    trackTeam.addEventListener('click', ()=>{
+        alert('ad')
+    })
+    document.body.appendChild(trackTeam)
+</script>
 <!-- UI JS -->
 <script src="/static/js/ui/teams.js"></script>
 <!-- Page JS -->

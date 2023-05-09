@@ -1,3 +1,10 @@
+var trackTeam = document.getElementById("trackTeam")
+trackTeam.innerText = 'track this team'
+
+trackTeam.addEventListener('click',()=>{
+    alert('Oh, you clicked me!')
+})
+
 function renderTeamsSelector (container, allTeams, trackedTeams) {
     // This is a search bar, followed by a series of divs contained in the div specified by container.
     let containerDiv = document.getElementById(container);
@@ -53,7 +60,7 @@ function createTeamDiv (container, team, isTracked) {
     teamDiv.setAttribute("class", "teamDiv");
     // Create the team name.
     let teamName = document.createElement("p");
-    teamName.innerHTML = team.name;
+    teamName.innerHTML = team.name; 
     // Create the team logo.
     let teamLogo = document.createElement("img");
     teamLogo.setAttribute("src", team.imgUrl);
