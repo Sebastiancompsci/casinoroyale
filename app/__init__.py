@@ -2,11 +2,17 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import sqlite3
 
-# Route imports
+# Main route imports
 from routes.index import index
 from routes.login import login_get, login_post
 from routes.register import register_get, register_post
 from routes.logout import logout
+from routes.odds import odds
+from routes.stats import stats
+from routes.teams import teams
+
+# API route imports
+from routes.api.teams import get_tracked_teams, get_teams
 
 app = Flask(__name__)
 
@@ -17,11 +23,18 @@ app.add_url_rule('/login', 'login_post', view_func=login_post, methods=['POST'])
 app.add_url_rule('/register', 'register_get', view_func=register_get, methods=['GET'])
 app.add_url_rule('/register', 'register_post', view_func=register_post, methods=['POST'])
 app.add_url_rule('/logout', 'logout', view_func=logout)
+app.add_url_rule('/odds', 'odds', view_func=odds)
+app.add_url_rule('/stats', 'stats', view_func=stats)
+app.add_url_rule('/teams', 'teams', view_func=teams)
+
+# API Routes
+app.add_url_rule('/api/profile/tracked_teams', 'get_tracked_teams', view_func=get_tracked_teams, methods=['GET'])
+app.add_url_rule('/api/teams', 'get_teams', view_func=get_teams, methods=['GET'])
 
 # Start
 def start():
     # Initialize database
-    conn = sqlite3.connect('db.sqlite3', check_same_thread=False)
+    conn = sqlite3.connect('database.db', check_same_thread=False)
     c = conn.cursor()
 
     # Add connection to global config

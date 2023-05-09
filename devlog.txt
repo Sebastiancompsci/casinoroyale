@@ -1,1 +1,3 @@
-The primary thing we needed to add was how we actually were going to implement the tables into our site. 
+2023-05-08
+=======================
+- William Vongphanith: Placed templates for all pages, implemented base javascript, database logic, and CSS frameworks.
