@@ -10,3 +10,4 @@
 2023-05-10
 =======================
 - Yusha Aziz: Wrote the about me story, added it to the HTML, updated the css to support it, and made it look clean
+- Yusha Aziz: Planend out how the odds html will work
