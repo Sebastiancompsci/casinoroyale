@@ -1,10 +1,9 @@
-# Teams route rule file
+# About page route rule file
 
 from flask import render_template, request, redirect, session
 from flask import current_app as app
 
-
-def teams():
+def about():
     # If user is logged in
     if 'user' in session:
         # Fetch user data from database by username
@@ -22,9 +21,9 @@ def teams():
         tracked_teams = cursor.fetchall()
 
         # Render index page with user data and tracked teams
-        return render_template('teams.html', user=user[1], tracked_teams=tracked_teams)
+        return render_template('about.html', user=user[1], tracked_teams=tracked_teams)
 
     # If user is not logged in
     else:
         # Render index page by default
-        return render_template('teams.html')
+        return render_template('about.html')

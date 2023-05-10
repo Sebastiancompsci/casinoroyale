@@ -1,3 +1,7 @@
 2023-05-08
 =======================
 - William Vongphanith: Placed templates for all pages, implemented base javascript, database logic, and CSS frameworks.
+
+2023-05-09
+=======================
+- William Vongphanith: MASS CSS UPDATES, tons of js stuff, ui stuff, more dummy teams, update gitignore.

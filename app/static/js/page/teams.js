@@ -25,5 +25,5 @@ let trackedTeams = null;
     }
 
     // Now render the teams list.
-    renderTeamsList('teamsContainer', allTeams, trackedTeams);
+    renderTeamsSelector(allTeams, trackedTeams);
 })();

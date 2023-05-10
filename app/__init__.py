@@ -10,9 +10,10 @@ from routes.logout import logout
 from routes.odds import odds
 from routes.stats import stats
 from routes.teams import teams
+from routes.about import about
 
 # API route imports
-from routes.api.teams import get_tracked_teams, get_teams
+from routes.api.teams import get_tracked_teams, get_teams, set_tracked_teams
 
 app = Flask(__name__)
 
@@ -26,10 +27,12 @@ app.add_url_rule('/logout', 'logout', view_func=logout)
 app.add_url_rule('/odds', 'odds', view_func=odds)
 app.add_url_rule('/stats', 'stats', view_func=stats)
 app.add_url_rule('/teams', 'teams', view_func=teams)
+app.add_url_rule('/about', 'about', view_func=about)
 
 # API Routes
 app.add_url_rule('/api/profile/tracked_teams', 'get_tracked_teams', view_func=get_tracked_teams, methods=['GET'])
 app.add_url_rule('/api/teams', 'get_teams', view_func=get_teams, methods=['GET'])
+app.add_url_rule('/api/profile/tracked_teams', 'set_tracked_teams', view_func=set_tracked_teams, methods=['POST'])
 
 # Start
 def start():
