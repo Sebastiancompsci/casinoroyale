@@ -5,3 +5,4 @@
 2023-05-09
 =======================
 - William Vongphanith: MASS CSS UPDATES, tons of js stuff, ui stuff, more dummy teams, update gitignore.
+- Use python file as api, pull data from nba api, as well as user inputted info (teams, login info). We store all of the data into a sqlite table. 
