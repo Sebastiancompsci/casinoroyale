@@ -11,3 +11,7 @@
 =======================
 - Yusha Aziz: Wrote the about me story, added it to the HTML, updated the css to support it, and made it look clean
 - Yusha Aziz: Planend out how the odds html will work
+
+2023-05-11
+=======================
+- Yusha Aziz: Wrote the functions for stats.py and odds.py. Fixed a css issue. Added base texts for both stats.html and odds.html
