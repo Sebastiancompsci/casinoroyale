@@ -27,4 +27,4 @@ def odds():
     # If user is not logged in
     else:
         # Render index page by default
-    return render_template('odds.html')
+        return render_template('odds.html')
