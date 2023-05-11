@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Game Odds | Casino Royale</title>
-		<!-- Responsive meta tag -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/static/css/dist.css">
-	</head>
-	<body>
-		<!-- Game odds page body. No styling, we are leaving it bare for now. -->
-		<!-- Potential Ideas for Odds
+
+<head>
+	<title>Game Odds | Casino Royale</title>
+	<!-- Responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/jtt3zfd.css">
+	<link rel="stylesheet" href="/static/css/dist.css">
+</head>
+
+<!-- Game odds page body. No styling, we are leaving it bare for now. -->
+<!-- Potential Ideas for Odds
 				- Show the teams with the best odds on the left side, like a scrollable featuer
 				- you can see your balance on the top right corner
 				- Then on the right side you can select a team to bet a certain amount
 		-->
 
-		<h1>Game Odds</h1>
-		<p>Coming soon...</p>
-	</body>
+
+<body>
+	<!-- Game stats page body. No styling, we are leaving it bare for now. -->
+
+	<div class="top-0 absolute w-full min-h-screen bg-gradient-to-br from-gray-900 to-blue-950">
+		<!-- Navbar -->
+		<div id="nav" class="flex flex-row items-center justify-between w-full px-4 py-4 absolute top-0">
+			<div class="flex flex-row items-center justify-center">
+				{% if user %}
+				<a href="/">
+					<p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">
+						Welcome, {{ user }}</p>
+				</a>
+				{% else %}
+				<a href="/">
+					<p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">Casino
+						Royale</p>
+				</a>
+				{% endif %}
+			</div>
+			<div class="flex flex-row items-center justify-center">
+				{% if user %}
+				<a href="/logout"
+					class="bg-white hover:bg-blue-500 text-black font-bold py-2 px-4 rounded duration-300 ease-in-out">Logout</a>
+				{% else %}
+				<a href="/login"
+					class="ml-2 bg-white hover:bg-blue-500 text-black font-bold py-2 px-4 rounded duration-300 ease-in-out">Login</a>
+				<a href="/register"
+					class="ml-2 bg-white hover:bg-blue-500 text-black font-bold py-2 px-4 rounded duration-300 ease-in-out">Register</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
