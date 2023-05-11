@@ -23,15 +23,11 @@
 		<div id="nav" class="flex flex-row items-center justify-between w-full px-4 py-4 absolute top-0">
 			<div class="flex flex-row items-center justify-center">
 				{% if user %}
-				<a href="/">
-					<p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">
-						Welcome, {{ user }}</p>
-				</a>
+					<a href="/"><p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">
+						Welcome, {{ user }}</p></a>
 				{% else %}
-				<a href="/">
-					<p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">Casino
-						Royale</p>
-				</a>
+					<a href="/"><p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">Casino
+						Royale</p></a>
 				{% endif %}
 			</div>
 			<div class="flex flex-row items-center justify-center">
