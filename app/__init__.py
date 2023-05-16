@@ -1,6 +1,14 @@
 # General imports
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import sqlite3
+import requests
+
+
+# Variables
+r = requests.get('https://api.the-odds-api.com')
+
+with open('nba.txt','w') as fd:
+    fd.write(r.content)
 
 # Main route imports
 from routes.index import index
