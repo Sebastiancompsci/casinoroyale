@@ -7,8 +7,8 @@ import requests
 # Variables
 r = requests.get('https://api.the-odds-api.com')
 
-with open('nba.txt','w') as fd:
-    fd.write(r.content)
+##with open('nba.txt','w') as fd:
+  ##  fd.write(r.content)
 
 # Main route imports
 from routes.index import index
