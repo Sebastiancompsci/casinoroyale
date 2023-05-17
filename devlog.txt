@@ -10,8 +10,16 @@
 2023-05-10
 =======================
 - Yusha Aziz: Wrote the about me story, added it to the HTML, updated the css to support it, and made it look clean
-- Yusha Aziz: Planend out how the odds html will work
+- Yusha Aziz & Aaaron G: Planend out how the odds html will work
 
 2023-05-11
 =======================
 - Yusha Aziz: Wrote the functions for stats.py and odds.py. Fixed a css issue. Added base texts for both stats.html and odds.html
+
+2023-05-15
+=======================
+- Sebastian Ching & Yusha Aziz: Collaborated together during class to add teams to the odds.html and statistic.py. Fixed bugs and minor issues.
+
+2023-05-16
+=======================
+- Sebastian Ching, Yusha Aziz, Aaron G: Worked on APIs and signed up for API codes
