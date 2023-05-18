@@ -26,11 +26,6 @@
 
 2023-05-18
 =======================
-- Aaron: Acted as an emissary to other groups
-    - Information Gathered: Maya's group used an API to pull data into a db one time then cycle from the database
-    -Craig: interactable map, used js to create a chart (chart.js)
-    - Henry: No data yet, but clear way to change color of the graph
-    - Kosta: used SVG images to make it deal with zoom, missing mcdonalds because of incomplete data set, mix of two? 
 - Yusha: Acted as a presenter to other groups
     - People brought some good concerns:
         - Should people start with money and how much?
@@ -40,3 +35,9 @@
     - Things people liked:
         - The story, they though it was very funny
         - They loved the search bar, and how it saved the teams
+- Aaron: Acted as an emissary to other groups
+    - Information Gathered: Maya's group used an API to pull data into a db one time then cycle from the database
+    -Craig: interactable map, used js to create a chart (chart.js)
+    - Henry: No data yet, but clear way to change color of the graph
+    - Kosta: used SVG images to make it deal with zoom, missing mcdonalds because of incomplete data set, mix of two? 
+
