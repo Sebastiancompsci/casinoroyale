@@ -20,6 +20,7 @@ from routes.stats import stats
 from routes.teams import teams
 from routes.about import about
 from routes.map import map
+from routes.faq import faq
 
 # API route imports
 from routes.api.teams import get_tracked_teams, get_teams, set_tracked_teams
@@ -38,6 +39,7 @@ app.add_url_rule('/stats', 'stats', view_func=stats)
 app.add_url_rule('/teams', 'teams', view_func=teams)
 app.add_url_rule('/about', 'about', view_func=about)
 app.add_url_rule('/map', 'map', view_func=map)
+app.add_url_rule('/faq', 'faq', view_func=faq)
 
 # API Routes
 app.add_url_rule('/api/profile/tracked_teams', 'get_tracked_teams', view_func=get_tracked_teams, methods=['GET'])
