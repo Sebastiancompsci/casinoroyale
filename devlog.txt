@@ -41,3 +41,6 @@
     - Henry: No data yet, but clear way to change color of the graph
     - Kosta: used SVG images to make it deal with zoom, missing mcdonalds because of incomplete data set, mix of two? 
 
+2023-05-23
+=======================
+- Yusha: Wrote the FAQ questions, created the HTML, the python route, the javascript, and updated all files to accomodate
