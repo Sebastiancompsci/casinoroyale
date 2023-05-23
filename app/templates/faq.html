@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Casino Royale</title>
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/jtt3zfd.css">
+    <link rel="stylesheet" href="/static/css/dist.css">
+</head>
+<body>
+
+<div class="flex flex-col items-center justify-center min-h-screen h-full bg-gradient-to-br from-gray-900 to-blue-950">
+    <!-- Navbar -->
+    <div id="nav" class="flex flex-row items-center justify-between w-full px-4 py-4 absolute top-0">
+        <div class="flex flex-row items-center justify-center">
+            {% if user %}
+                <a href="/"><p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">Welcome, {{ user }}</p></a>
+            {% else %}
+                <a href="/"><p class="px-4 py-2 text-lg font-bold text-white hover:text-blue-500 duration-300">Casino Royale</p></a>
+            {% endif %}
+        </div>
+        <div class="flex flex-row items-center justify-center">
+            {% if user %}
+                <a href="/logout" class="bg-white hover:bg-blue-500 text-black font-bold py-2 px-4 rounded duration-300 ease-in-out">Logout</a>
+            {% else %}
+                <a href="/login" class="ml-2 bg-white hover:bg-blue-500 text-black font-bold py-2 px-4 rounded duration-300 ease-in-out">Login</a>
+                <a href="/register" class="ml-2 bg-white hover:bg-blue-500 text-black font-bold py-2 px-4 rounded duration-300 ease-in-out">Register</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Begin main page content -->
+    <div class="flex flex-col items-center justify-center w-full px-4 py-4 mt-16">
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4">
+            <h1 class="text-4xl font-bold text-white mb-2">Common Frequently Asked Questions</h1>
+            <br><br>
+            <br>
+            <h2 class="text-2xl text-white max-w-4xl">
+                1. What is sports betting?
+                <br>        
+Sports betting refers to the activity of predicting the outcome of a sporting event and placing a wager (bet) on that prediction. It involves placing bets on various sports such as football, basketball, baseball, soccer, and more.
+
+<br><br>
+
+2. Is sports betting legal?
+<br>
+The legality of sports betting varies by country and jurisdiction. Checkout our Map to find out if you can bet or not.
+<br><br>
+3. How does sports betting work?
+<br>
+Sports betting involves choosing a sportsbook or bookmaker, selecting a sport or event to bet on, analyzing the odds and potential outcomes, placing a wager, and waiting for the result. If your prediction is correct, you win the bet and receive a payout based on the odds.
+<br><br>
+4. Can I bet on any sport?
+<br>
+Most popular sports are available for betting, including but not limited to football, basketball, baseball, soccer, tennis, golf, boxing, and horse racing. But you can only bet on basketball games on our website. 
+<br><br>
+5. What is a point spread in sports betting?
+<br>
+A point spread is a handicap assigned by oddsmakers to balance the playing field between two teams of different skill levels. The favorite team is given a negative point spread, while the underdog receives a positive point spread. Bettors wager on whether the team will win or lose by a certain margin.
+<br><br>
+6. How do odds work in sports betting?
+<br>
+Odds represent the probability of an event occurring and determine the potential payout of a bet. They can be presented in different formats, such as decimal odds, fractional odds, or moneyline odds. Higher odds indicate a higher potential payout but lower probability of winning.
+<br><br>
+7. What is the moneyline in sports betting?
+<br>
+The moneyline is a type of bet where you wager on which team or player will win a game outright, without considering the point spread. Positive and negative numbers indicate the underdog and favorite, respectively, and determine the potential payout.
+<br><br>
+8. How do I calculate potential winnings in sports betting?
+<br>
+To calculate potential winnings, multiply your stake by the odds of the bet. Subtracting the stake from the total amount will give you the potential profit.
+<br><br>
+9. Can I bet on individual players in sports?
+<br>
+Yes, you can bet on individual player performances, such as the number of goals scored, assists made, or yards gained. These types of bets are commonly referred to as player props.
+<br><br>
+10. What is live betting?
+<br>
+Live betting allows you to place bets on a game or event that is already in progress. It offers the opportunity to react to the changing dynamics of the game and make bets during the action. We provide live betting.
+<br><br>
+11. Are there any strategies or tips for successful sports betting?
+<br>
+Some common strategies include researching and analyzing the teams or players, managing your bankroll, setting a budget, comparing odds from different sportsbooks, and staying
+<br><br>
+12. What happens if there is a tie or a draw in a sports bet?
+<br>    
+You lose!
+<br><br>    
+13. Are there any tax implications for sports betting winnings?
+<br>
+Tax implications on sports betting winnings vary by jurisdiction. In some countries, gambling winnings are subject to taxation, while in others, they may be tax-free up to a certain threshold. Consult with a tax professional or review your local tax laws to understand the specific regulations.
+<br><br>
+14. What is the minimum age for sports betting?
+<br>
+The minimum age for sports betting varies by country and jurisdiction. In many places, the legal age is typically 18 or 21 years old. Check the laws in your specific location to determine the minimum age requirement.
+                <br><br>
+                If you have any further questions, reach out to Casino Royale Customer Support
+                </h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>
