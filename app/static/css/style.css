@@ -1,3 +1,5 @@
+
+
 path {
     stroke: white;
     fill:paleturquoise !important;
@@ -6,16 +8,16 @@ path {
 }
 
 path:hover {
-    fill: orange !important;
+     fill: Green !important;
     cursor: pointer;
     transform: scale(1.005, 1.005);
 }
 
-/* #map-container {
+ #map-container {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 #us-map {
     display: block;
