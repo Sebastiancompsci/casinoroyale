@@ -3,7 +3,7 @@ var detailsBox = document.getElementById('details-box');
 document.addEventListener('mouseover', function (e) {
   if (e.target.tagName == 'path') {
     var content = e.target.dataset.name;
-    detailsBox.innerHTML = content;
+    detailsBox.innerHTML = content + " has Legal Sports Betting!";
     detailsBox.style.opacity = "100%";
   }
   else {
